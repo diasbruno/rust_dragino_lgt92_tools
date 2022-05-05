@@ -1,0 +1,8 @@
+[package]
+name = "dragino_lgt92_tools"
+version = "0.1.0"
+edition = "2021"
+path = "src/lib.rs"
+
+[dependencies]
+bytes = "1.1.0"
