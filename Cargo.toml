@@ -2,7 +2,10 @@
 name = "dragino_lgt92_tools"
 version = "0.1.0"
 edition = "2021"
-path = "src/lib.rs"
+description = "Rust tools to work with Dragino's LGT-92 GPS."
+license = "Unlicense"
+authors = ["Bruno Dias <dias.h.bruno@gmail.com>"]
+email = "dias.h.bruno@gmail.com"
 
 [dependencies]
 bytes = "1.1.0"
