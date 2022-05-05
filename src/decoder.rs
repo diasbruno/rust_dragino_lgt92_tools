@@ -39,8 +39,6 @@ pub fn decode_battery(b: &Bytes) -> f32 {
 pub fn decode_roll(b: &Bytes) -> f32 {
     let roll = (b[8] as u16) << 8 | b[9] as u16;
 
-    println!("roll {:#x}", roll);
-
     if (roll & 0x8000) == 0x0 {
         return (roll as f32) / 100.0
     }
@@ -50,8 +48,6 @@ pub fn decode_roll(b: &Bytes) -> f32 {
 
 pub fn decode_pitch(b: &Bytes) -> f32 {
     let pitch = (b[10] as u16) << 8 | b[11] as u16;
-
-    println!("pitch {:?}", pitch);
 
     if (pitch & 0x8000) == 0x8000 {
         return ((pitch as f32) - (0x10000 as f32)) / 100.0
