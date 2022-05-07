@@ -1,6 +1,6 @@
 [package]
 name = "dragino_lgt92_tools"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "Rust tools to work with Dragino's LGT-92 GPS."
 license = "Unlicense"
