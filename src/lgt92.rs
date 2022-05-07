@@ -1,5 +1,3 @@
-pub type Bytes = &'static [u8];
-
 #[derive(PartialEq, Debug, Clone, Copy)]
 pub enum Alarm {
     Off = 0,
